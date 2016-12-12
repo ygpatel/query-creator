@@ -1,10 +1,12 @@
-
-      
-            <div ng-repeat="qc in queryConfigs" >
-                <h4>{{qc.queryname}}</h4>
-              
-                <div ng-if="qc.querycomponent == 'checklist'"><div query-checklist queryconfig = 'qc' queryindex = '$index'></div></div>
-                <div ng-if="qc.querycomponent == 'colorpicker'"><div query-colorpicker queryconfig = 'qc'  queryindex = '$index'></div></div>
-                <div ng-if="qc.querycomponent == 'rangeslider'"><div query-rangeslider queryconfig = 'qc'  queryindex = '$index'></div></div>
-                   
-            </div>
+<div ng-repeat="qc in queryConfigs">
+    <h4>{{qc.queryname}}</h4>
+    <div ng-if="qc.querycomponent == 'checklist'">
+        <div query-checklist queryconfig='qc'></div>
+    </div>
+    <div ng-if="qc.querycomponent == 'colorpicker'">
+        <div query-colorpicker queryconfig='qc'></div>
+    </div>
+    <div ng-if="qc.querycomponent == 'rangeslider'">
+        <div query-rangeslider queryconfig='qc'></div>
+    </div>
+</div>
