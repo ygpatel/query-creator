@@ -21,20 +21,23 @@ app.controller('MainCtrl', function($scope) {
     $scope.queryConfigs = {};
     $scope.inputQueryString = JSON.stringify( [
         {
-            queryname: "Type",
+            queryname: "Jeans",
             querydata: {
-                "ABC dsfhkhds shdkf dkf": false,
-                "PQR hkjsdfhk sdhkf shdjkfh": false,
-                "RST dfkhskdfhkdsf": false
+                "Men": false,
+                "Women": false,
+                "Boys": false,
+                "Girls": false,
             },
             querycomponent: "checklist"
         },
         {
-            queryname: "Fabric",
+            queryname: "Brand",
             querydata: {
-                "Silk": false,
-                "Cotton": false,
-                "Nylon": false
+                "Levi's": false,
+                "Hollister": false,
+                "Americal Eagle": false,
+                "Wrangler": false,
+                "Calvin Klein":false
             },
             querycomponent: "checklist",
             "query": ""

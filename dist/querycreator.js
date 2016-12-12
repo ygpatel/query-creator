@@ -1,7 +1,7 @@
 /*! query-creator - v0.0.1 - 
  (c) Yogesh Patel <ygpatel@gmail.com> - 
  https://github.com/ygpatel/query-creator.git - 
- 2016-12-11 */
+ 2016-12-12 */
 /*jslint unparam: true */
 /*global angular: false, console: false, define, module */
 (function(root, factory) {
