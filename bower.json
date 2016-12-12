@@ -1,0 +1,29 @@
+{
+  "name": "query-creator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ygpatel/query-creator.git",
+  "authors": [
+    "Yogesh Patel <ygpatel@gmail.com>"
+  ],
+  "description": "AngularJS dynamic query creator!",
+  "main": [
+    "dist/querycreator.js",
+    "dist/querycreator.css"
+  ],
+  "keywords": [
+    "angularjs",
+    "query",
+    "builder"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.6.0"
+  }
+}

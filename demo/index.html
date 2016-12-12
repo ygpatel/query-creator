@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="qcDemo">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AngularJS Query Creator</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/querycreator.css"/>
+  <link rel="stylesheet" href="demo.css"/>
+  <link rel="stylesheet" href="../node_modules/angularjs-slider/dist/rzslider.css">    
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-controller="MainCtrl">
+
+<div class="wrapper">
+  <header>
+    <h1>AngularJS Query Creator</h1>
+  </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="container-fluid">
+                    <query-creator queryConfigs="queryParams"></query-creator>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 padding-right">
+                    
+                    
+                    <h4>Input Query Parameter</h4>
+                    <textarea
+                       ng-minlength="40" ng-model="inputQueryString" >
+                    </textarea>
+                <button ng-click="updateQuery(true)" >
+                        Update Query
+                    </button>
+            </div>
+            <div class="col-sm- 5 padding-right">
+                    <h4>Output Query</h4>
+                    <textarea
+                      name="outputQueryString" ng-minlength="40">{{stringJSON}} 
+                    </textarea>
+
+            </div>
+                    
+            
+        </div>
+    </div>
+  
+    
+</div>    
+    
+    
+    
+</body>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angularjs-slider/dist/rzslider.js"></script>    
+<script src="./lib/ui-bootstrap-tpls.js"></script>
+<script src="../dist/querycreator.js"></script>
+<script src="demo.js"></script>
+</html>
